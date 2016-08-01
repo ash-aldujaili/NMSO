@@ -29,15 +29,15 @@
       </header>
       <section>
         <h3>
-<a id="welcome-to-nmso" class="anchor" href="#welcome-to-nmso" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to NMSO.</h3>
+<a id="welcome-to-nmso" class="anchor" href="#welcome-to-nmso" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to NMSO.</h3>
 
-<p>This page hosts the MATLAB code for the Naive Multi-Scale Optimization (NMSO) algorithm to appear in, "A Naive Multi-Scale Algorithm for Global Optimization Problems", by Abdullah Al-Dujaili and S. Suresh.</p>
+<p>This page hosts the MATLAB code for the Naive Multi-Scale Optimization (NMSO) algorithm to appear in, "<a href="http://www.sciencedirect.com/science/article/pii/S0020025516305370">A Naive Multi-Scale Algorithm for Global Optimization Problems</a>", by Abdullah Al-Dujaili and S. Suresh.</p>
 
 <p>This algorithm has secured the <strong>third</strong> place out of <strong>28</strong> algorithms in the BBComp competition in GECCO'15.
 For more details, please refer to <a href="http://bbcomp.ini.rub.de/results/BBComp2015GECCO/summary.html">this</a>.</p>
 
 <h3>
-<a id="quick-demo" class="anchor" href="#quick-demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick Demo</h3>
+<a id="quick-demo" class="anchor" href="#quick-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quick Demo</h3>
 
 <p>Fire MATLAB and run the following:</p>
 
@@ -47,7 +47,7 @@ For more details, please refer to <a href="http://bbcomp.ini.rub.de/results/BBCo
 <p>This will walk you through a short demo of NMSO in action optimizing a function in 1-D and 2-D.</p>
 
 <h3>
-<a id="how-to-use-nmso" class="anchor" href="#how-to-use-nmso" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use NMSO</h3>
+<a id="how-to-use-nmso" class="anchor" href="#how-to-use-nmso" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use NMSO</h3>
 
 <p>NMSO has been designed for Black-box Bound-constrained Global Optimization problems. The following would minimize a spherical function whose optimal solution at x=[0.231 0.231] in a 2-D problem space, with the variables being limited to [0,1], using a function evaluation budget of 1000.</p>
 
@@ -58,6 +58,32 @@ minRange = 0;
 numEvaluations = 1000;
 ftarget = 0;
 [yBest,xBest]= NMSO(ftarget, func, numEvaluations, dim, maxRange, minRange, 0);
+</code></pre>
+
+<h3>
+<a id="citation" class="anchor" href="#citation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Citation</h3>
+
+<p>If you write a scientific paper describing research that made use of this code, please cite the following paper:</p>
+
+<pre><code>@article{AlDujaili2016b,
+title = "A Naive Multi-Scale Search Algorithm for Global Optimization Problems ",
+journal = "Information Sciences ",
+volume = "",
+number = "",
+pages = " - ",
+year = "2016",
+note = "",
+issn = "0020-0255",
+doi = "http://dx.doi.org/10.1016/j.ins.2016.07.054",
+url = "http://www.sciencedirect.com/science/article/pii/S0020025516305370",
+author = "Abdullah Al-Dujaili and S. Suresh",
+keywords = "Black-box optimization",
+keywords = "Global optimization",
+keywords = "Derivative-free optimization",
+keywords = "Partitioning-based",
+keywords = "Optimistic algorithms",
+keywords = "Finite-time analysis, "
+}
 </code></pre>
       </section>
       <footer>
