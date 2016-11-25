@@ -1,33 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>NMSO by ash-aldujaili</title>
+    <meta name="viewport" content="width=640">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
     <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>NMSO by ash-aldujaili</title>
   </head>
+
   <body>
-    <div class="wrapper">
+    <a id="forkme_banner" href="https://github.com/ash-aldujaili/NMSO">View on GitHub</a>
+    <div class="shell">
+
       <header>
-        <h1>NMSO</h1>
-        <p>Naive Multi-Scale Optimization Algorithm for bound-constrained black-box global optimization problems</p>
-
-        <p class="view"><a href="https://github.com/ash-aldujaili/NMSO">View the Project on GitHub <small>ash-aldujaili/NMSO</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/ash-aldujaili/NMSO/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/ash-aldujaili/NMSO/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/ash-aldujaili/NMSO">View On <strong>GitHub</strong></a></li>
-        </ul>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>NMSO</h1>
+            <h2>Naive Multi-Scale Optimization Algorithm for bound-constrained black-box global optimization problems</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
       </header>
-      <section>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/ash-aldujaili/NMSO/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/ash-aldujaili/NMSO/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
         <h3>
 <a id="welcome-to-nmso" class="anchor" href="#welcome-to-nmso" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to NMSO.</h3>
 
@@ -44,7 +62,7 @@ For more details, please refer to <a href="http://bbcomp.ini.rub.de/results/BBCo
 <pre><code>runDemo
 </code></pre>
 
-<p>This will walk you through a short demo of NMSO in action optimizing a function in 1-D and 2-D.</p>
+<p>This will walk you through a short demo of NMSO in action optimizing a function in 1-D and 2-D. You may want to toy with the algorithm's parameters (e.g., alpha and beta to get a better performance depending on the problem at hand).</p>
 
 <h3>
 <a id="how-to-use-nmso" class="anchor" href="#how-to-use-nmso" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use NMSO</h3>
@@ -65,12 +83,12 @@ ftarget = 0;
 
 <p>If you write a scientific paper describing research that made use of this code, please cite the following paper:</p>
 
-<pre><code>@article{AlDujaili2016b,
-title = "A Naive Multi-Scale Search Algorithm for Global Optimization Problems ",
+<pre><code>@article{AlDujaili2016294,
+title = "A Naive multi-scale search algorithm for global optimization problems ",
 journal = "Information Sciences ",
-volume = "",
+volume = "372",
 number = "",
-pages = " - ",
+pages = "294 - 312",
 year = "2016",
 note = "",
 issn = "0020-0255",
@@ -82,16 +100,26 @@ keywords = "Global optimization",
 keywords = "Derivative-free optimization",
 keywords = "Partitioning-based",
 keywords = "Optimistic algorithms",
-keywords = "Finite-time analysis, "
+keywords = "Finite-time analysis ",
+abstract = "Abstract This paper proposes a multi-scale search algorithm for solving global optimization problems given a finite number of function evaluations. We refer to this algorithm as the Naive Multi-scale Search Optimization (NMSO). \{NMSO\} looks for the optimal solution by optimistically partitioning the search space over multiple scales in a hierarchical fashion. Based on a weak assumption about the function smoothness, we present a theoretical analysis on its finite-time and asymptotic convergence. An empirical assessment of the algorithm has been conducted on the noiseless Black-Box Optimization Benchmarking (BBOB) testbed and compared with the state-of-the-art optimistic as well as stochastic algorithms. Moreover, the efficacy of \{NMSO\} has been validated on the black-box optimization competition within the GECCO’15 conference where it has secured the third place out of twenty-eight participating algorithms. Overall, \{NMSO\} is suitable for problems with limited function evaluations, low-dimensionality search space, and objective functions that are separable or multi-modal. Otherwise, it is comparable with the top performing algorithms. "
 }
 </code></pre>
       </section>
+
       <footer>
-        <p>This project is maintained by <a href="https://github.com/ash-aldujaili">ash-aldujaili</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/ash-aldujaili">ash-aldujaili</a> can be found on <a href="https://github.com/ash-aldujaili/NMSO">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
       </footer>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
