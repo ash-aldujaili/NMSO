@@ -8,7 +8,7 @@ Fire MATLAB and run the following:
 ~~~
 runDemo
 ~~~
-This will walk you through a short demo of NMSO in action optimizing a function in 1-D and 2-D.
+This will walk you through a short demo of NMSO in action optimizing a function in 1-D and 2-D. You may want to toy with the algorithm's parameters (e.g., alpha and beta to get a better performance depending on the problem at hand).
 
 ### How to use NMSO
 
@@ -29,12 +29,12 @@ ftarget = 0;
 If you write a scientific paper describing research that made use of this code, please cite the following paper:
 
 ~~~
-@article{AlDujaili2016b,
-title = "A Naive Multi-Scale Search Algorithm for Global Optimization Problems ",
+@article{AlDujaili2016294,
+title = "A Naive multi-scale search algorithm for global optimization problems ",
 journal = "Information Sciences ",
-volume = "",
+volume = "372",
 number = "",
-pages = " - ",
+pages = "294 - 312",
 year = "2016",
 note = "",
 issn = "0020-0255",
@@ -46,6 +46,7 @@ keywords = "Global optimization",
 keywords = "Derivative-free optimization",
 keywords = "Partitioning-based",
 keywords = "Optimistic algorithms",
-keywords = "Finite-time analysis, "
+keywords = "Finite-time analysis ",
+abstract = "Abstract This paper proposes a multi-scale search algorithm for solving global optimization problems given a finite number of function evaluations. We refer to this algorithm as the Naive Multi-scale Search Optimization (NMSO). \{NMSO\} looks for the optimal solution by optimistically partitioning the search space over multiple scales in a hierarchical fashion. Based on a weak assumption about the function smoothness, we present a theoretical analysis on its finite-time and asymptotic convergence. An empirical assessment of the algorithm has been conducted on the noiseless Black-Box Optimization Benchmarking (BBOB) testbed and compared with the state-of-the-art optimistic as well as stochastic algorithms. Moreover, the efficacy of \{NMSO\} has been validated on the black-box optimization competition within the GECCO’15 conference where it has secured the third place out of twenty-eight participating algorithms. Overall, \{NMSO\} is suitable for problems with limited function evaluations, low-dimensionality search space, and objective functions that are separable or multi-modal. Otherwise, it is comparable with the top performing algorithms. "
 }
 ~~~
